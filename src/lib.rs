@@ -134,6 +134,11 @@ impl Rect {
         }
     }
 
+    /// Get the top-left point
+    pub fn top_left(self) -> (i32, i32) {
+        (self.x, self.y)
+    }
+
     /// Get the bottom-right point
     pub fn bottom_right(self) -> (i32, i32) {
         (self.x + self.width, self.y + self.height)
