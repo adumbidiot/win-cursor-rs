@@ -2,7 +2,10 @@
 An small, incomplete API to control cursors on Windows for personal amusement. 
 
 ## Example
+
 ```rust
+#![cfg_attr(not(debug_assertions), windows_subsystem = "windows")]
+
 use rand::Rng;
 use std::time::Duration;
 
