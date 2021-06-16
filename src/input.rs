@@ -115,9 +115,9 @@ impl Default for MoveType {
     }
 }
 
-impl Into<INPUT> for &'_ Input {
-    fn into(self) -> INPUT {
-        match self {
+impl From<&'_ Input> for INPUT {
+    fn from(input: &'_ Input) -> Self {
+        match input {
             Input::Mouse(mouse_input) => {
                 let input = unsafe {
                     let mut input: INPUT = std::mem::zeroed();
