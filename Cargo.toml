@@ -9,4 +9,11 @@ license = "MIT/Apache-2.0"
 winapi = { version = "0.3.9", features = [ "winuser", "winerror" ] }
 
 [dev-dependencies]
-rand = "0.7.3"
+rand = "0.8.4"
+
+[profile.release]
+lto = true
+codegen-units = 1
+opt-level = 'z'
+panic = "abort"
+
