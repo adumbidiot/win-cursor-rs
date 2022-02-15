@@ -1,0 +1,1 @@
+initSidebarItems({"enum":[["Input","An input"]],"fn":[["get_bounds","Get cursor boundaries"],["get_positon","Get cursor position"],["left_click","Left Click"],["right_click","Right Click"],["send_inputs","Send mouse, keyboard, and hardware inputs"],["set_position","Set the cursor position"]],"struct":[["MouseInput","Mouse Input Event"],["Rect","A Rectangle"]]});
